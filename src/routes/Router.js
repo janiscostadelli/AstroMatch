@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import HomePage from "../pages/Home/HomePage";
 import InitialPage from "../pages/Initial/InitialPage";
-import MatchsPage from '../pages/Matchs/MatchsPage'
+import MatchPage from '../pages/Match/MatchPage'
 
 const Router = () => {
   return (
@@ -14,8 +14,8 @@ const Router = () => {
         <Route exact path="/home">
           <HomePage />
         </Route>
-        <Route exact path="/matchs">
-          <MatchsPage />
+        <Route exact path="/matches">
+          <MatchPage />
         </Route>
       </Switch>
     </BrowserRouter>
