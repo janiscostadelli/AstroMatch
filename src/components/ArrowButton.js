@@ -13,9 +13,9 @@ const MainContainer = styled.img`
   }
 `
 
-const Button = (props) => {
+const ArrowButton = (props) => {
   return (
     <MainContainer onClick={props.onClick} right={props.right} src={ButtonIMG}/>
   );
 }
-export default Button;
+export default ArrowButton;
