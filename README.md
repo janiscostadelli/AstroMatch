@@ -12,6 +12,10 @@ npm start
 npm run build
 ```
 
+#### ✔️ Features
+- Dar match
+- Resetar matches
+
 
 #### 🌎 Deploy
 Clique [aqui](https://janiscostadelli.github.io/AstroMatch/) para acessar.
