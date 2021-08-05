@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/AstroMatch/static/js/main.e2820669.chunk.js",
-    "main.js.map": "/AstroMatch/static/js/main.e2820669.chunk.js.map",
+    "main.js": "/AstroMatch/static/js/main.0657cd5f.chunk.js",
+    "main.js.map": "/AstroMatch/static/js/main.0657cd5f.chunk.js.map",
     "runtime-main.js": "/AstroMatch/static/js/runtime-main.f110813a.js",
     "runtime-main.js.map": "/AstroMatch/static/js/runtime-main.f110813a.js.map",
     "static/js/2.788ef8c3.chunk.js": "/AstroMatch/static/js/2.788ef8c3.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.f110813a.js",
     "static/js/2.788ef8c3.chunk.js",
-    "static/js/main.e2820669.chunk.js"
+    "static/js/main.0657cd5f.chunk.js"
   ]
 }
