@@ -21,13 +21,13 @@ export const choosePerson = (id, choice) => {
   );
 };
 
-export const clear = () => {
+export const clear = (history) => {
   axios
     .put(
       `https://us-central1-missao-newton.cloudfunctions.net/astroMatch/janis-cruz/clear`
     )
     .then((res) => {
-      document.location.reload(true);
+      history.push("/AstroMatch/home");
     })
     .catch(() => {
       return alert("Tente novamente");

@@ -104,7 +104,9 @@ const HomeCard = () => {
       {profile && !profile.id ? (
         <LoadingText>carregando</LoadingText>
       ) : profile === null ? (
-        <LoadingText>Você já viu todos os perfis! Tente resetar os matches</LoadingText>
+        <LoadingText>
+          Você já viu todos os perfis! Tente resetar os matches
+        </LoadingText>
       ) : (
         <SubContainer>
           <ProfileImg src={profile.photo} />
@@ -118,8 +120,8 @@ const HomeCard = () => {
       <ButtonsContainer>
         <Button
           onClick={() => {
-            if(profile === null){
-              return alert("Tente resetar na página de matches")
+            if (profile === null) {
+              return alert("Tente resetar na página de matches");
             }
             choosePerson(profile.id, false);
             getProfile().then((res) => {
@@ -130,8 +132,8 @@ const HomeCard = () => {
         />
         <Button
           onClick={() => {
-            if(profile === null){
-              return alert("tente resetar na página de matches")
+            if (profile === null) {
+              return alert("tente resetar na página de matches");
             }
             choosePerson(profile.id, true);
             getProfile().then((res) => {

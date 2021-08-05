@@ -18,12 +18,12 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h1`
-font-size: 70px;
-font-weight: 200;
+  font-size: 70px;
+  font-weight: 200;
 `;
 
 export const Subtitle = styled.h2`
-font-size: 30px;
-font-weight: 200;
-margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 20px;
 `;

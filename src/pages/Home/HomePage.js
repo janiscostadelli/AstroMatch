@@ -11,7 +11,7 @@ const HomePage = () => {
     <MainContainter>
       <MatchsButton>
         <OutlinedButton
-          onClick={() => history.push("/matches")}
+          onClick={() => history.push("/AstroMatch/matches")}
           title="Matches"
         />
       </MatchsButton>

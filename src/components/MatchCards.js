@@ -4,8 +4,7 @@ import styled from "styled-components";
 const MatchCards = (props) => {
   return (
     <MainContainer>
-      {
-        props.matches &&
+      {props.matches &&
         props.matches.map((match) => {
           return (
             <Card key={match.id}>

@@ -22,13 +22,13 @@ const MatchPage = () => {
         <Title>Matches</Title>
         <ArrowButton
           onClick={() => {
-            history.push("/home");
+            history.push("/AstroMatch/home");
           }}
         />
       </Header>
       <MatchCards matches={matches} />
       <Footer>
-        <OutlinedButton onClick={clear} title="Resetar" />
+        <OutlinedButton onClick={()=>{clear(history)}} title="Resetar" />
       </Footer>
     </MainContainer>
   );

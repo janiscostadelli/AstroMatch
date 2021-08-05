@@ -8,13 +8,13 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/AstroMatch">
           <InitialPage />
         </Route>
-        <Route exact path="/home">
+        <Route exact path="/AstroMatch/home">
           <HomePage />
         </Route>
-        <Route exact path="/matches">
+        <Route exact path="/AstroMatch/matches">
           <MatchPage />
         </Route>
       </Switch>
