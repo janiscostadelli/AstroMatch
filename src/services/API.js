@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const GetProfile = async () => {
+export const getProfile = async () => {
   const result = await axios
     .get(
       `https://us-central1-missao-newton.cloudfunctions.net/astroMatch/janis-cruz/person`
@@ -14,9 +14,36 @@ export const GetProfile = async () => {
   return result;
 };
 
-export const ChoosePerson = (id, choice) => {
+export const choosePerson = (id, choice) => {
   axios.post(
     `https://us-central1-missao-newton.cloudfunctions.net/astroMatch/janis-cruz/choose-person`,
     { id, choice }
   );
+};
+
+export const clear = () => {
+  axios
+    .put(
+      `https://us-central1-missao-newton.cloudfunctions.net/astroMatch/janis-cruz/clear`
+    )
+    .then((res) => {
+      document.location.reload(true);
+    })
+    .catch(() => {
+      return alert("Tente novamente");
+    });
+};
+
+export const getMatches = async () => {
+  const result = await axios
+    .get(
+      `https://us-central1-missao-newton.cloudfunctions.net/astroMatch/janis-cruz/matches`
+    )
+    .then((res) => {
+      return res.data.matches;
+    })
+    .catch(() => {
+      return [];
+    });
+  return result;
 };

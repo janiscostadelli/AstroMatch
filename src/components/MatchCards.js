@@ -1,57 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-const matches = [
-  {
-    id: 0,
-    name: "Luffytaro",
-    photo:
-      "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg",
-  },
-  {
-    id: 1,
-    name: "Zorojuro",
-    photo:
-      "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg",
-  },
-  {
-    id: 2,
-    name: "Janis",
-    photo:
-      "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg",
-  },
-  {
-    id: 3,
-    name: "O-Robin",
-    photo:
-      "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg",
-  },
-  {
-    id: 4,
-    name: "Sangoro",
-    photo:
-      "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg",
-  },
-  {
-    id: 5,
-    name: "Luffytaro",
-    photo:
-      "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg",
-  },
-  {
-    id: 6,
-    name: "Luffytaro",
-    photo:
-      "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg",
-  },
-];
-
-const MatchCards = () => {
+const MatchCards = (props) => {
   return (
     <MainContainer>
-      {matches &&
-        matches.length &&
-        matches.map((match) => {
+      {
+        props.matches &&
+        props.matches.map((match) => {
           return (
             <Card key={match.id}>
               <ProfileImg src={match.photo} />
@@ -96,5 +51,6 @@ const Title = styled.p`
 
 const ProfileImg = styled.img`
   height: 45px;
-  border-radius: 30px;
+  width: 45px;
+  border-radius: 50px;
 `;
