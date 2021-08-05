@@ -7,18 +7,18 @@ export const MainContainter = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  position:relative;
+  position: relative;
   flex-direction: column;
 `;
 
 export const MatchsButton = styled.div`
-position: absolute;
-right: 20px;
-top: 15px;
-@media (max-width: 600px){
-  position: relative;
-  right: 0px;
-  top: 0px;
-  margin-bottom: -25px;
-}
-`
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  @media (max-width: 600px) {
+    position: relative;
+    right: 0px;
+    top: 0px;
+    margin-bottom: -25px;
+  }
+`;
