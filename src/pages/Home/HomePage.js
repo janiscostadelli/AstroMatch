@@ -12,7 +12,7 @@ const HomePage = () => {
       <MatchsButton>
         <OutlinedButton
           onClick={() => history.push("/matches")}
-          title="Matchs"
+          title="Matches"
         />
       </MatchsButton>
       <HomeCard />

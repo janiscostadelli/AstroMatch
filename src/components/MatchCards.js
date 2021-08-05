@@ -50,27 +50,107 @@ const MatchCards = () => {
   return (
     <MainContainer>
       <Card>
-        <ProfileImg src={'https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg'}/>
+        <ProfileImg
+          src={
+            "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg"
+          }
+        />
         <Title>Luffytaro</Title>
       </Card>
       <Card>
-        <ProfileImg src={'https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg'}/>
+        <ProfileImg
+          src={
+            "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg"
+          }
+        />
         <Title>Luffytaro</Title>
       </Card>
       <Card>
-        <ProfileImg src={'https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg'}/>
+        <ProfileImg
+          src={
+            "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg"
+          }
+        />
         <Title>Luffytaro</Title>
       </Card>
       <Card>
-        <ProfileImg src={'https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg'}/>
+        <ProfileImg
+          src={
+            "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg"
+          }
+        />
         <Title>Luffytaro</Title>
       </Card>
       <Card>
-        <ProfileImg src={'https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg'}/>
+        <ProfileImg
+          src={
+            "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg"
+          }
+        />
         <Title>Luffytaro</Title>
       </Card>
       <Card>
-        <ProfileImg src={'https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg'}/>
+        <ProfileImg
+          src={
+            "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg"
+          }
+        />
+        <Title>Luffytaro</Title>
+      </Card>
+      <Card>
+        <ProfileImg
+          src={
+            "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg"
+          }
+        />
+        <Title>Luffytaro</Title>
+      </Card>
+      <Card>
+        <ProfileImg
+          src={
+            "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg"
+          }
+        />
+        <Title>Luffytaro</Title>
+      </Card>
+      <Card>
+        <ProfileImg
+          src={
+            "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg"
+          }
+        />
+        <Title>Luffytaro</Title>
+      </Card>
+      <Card>
+        <ProfileImg
+          src={
+            "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg"
+          }
+        />
+        <Title>Luffytaro</Title>
+      </Card>
+      <Card>
+        <ProfileImg
+          src={
+            "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg"
+          }
+        />
+        <Title>Luffytaro</Title>
+      </Card>
+      <Card>
+        <ProfileImg
+          src={
+            "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg"
+          }
+        />
+        <Title>Luffytaro</Title>
+      </Card>
+      <Card>
+        <ProfileImg
+          src={
+            "https://i.pinimg.com/originals/35/7b/ac/357bacd90ffcca136be5fa4e03e1f1c2.jpg"
+          }
+        />
         <Title>Luffytaro</Title>
       </Card>
     </MainContainer>
@@ -80,13 +160,16 @@ const MatchCards = () => {
 export default MatchCards;
 
 const MainContainer = styled.div`
-  width: 700px;
-  background-color: pink;
+  width: 70vw;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   gap: 25px;
   padding: 25px;
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
 `;
 
 const Card = styled.div`
